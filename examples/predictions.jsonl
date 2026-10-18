@@ -1,0 +1,1 @@
+{"sentence":"李华在北京工作","gold":[{"type":"name","text":"李华","start":0,"end":2},{"type":"address","text":"北京","start":3,"end":5}],"response":"[{\"type\":\"name\",\"text\":\"李华\",\"start\":0,\"end\":2},{\"type\":\"address\",\"text\":\"北京\",\"start\":3,\"end\":5}]"}

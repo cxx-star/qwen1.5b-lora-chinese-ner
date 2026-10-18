@@ -1,0 +1,10 @@
+{
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "system_prompt": "\n你是中文实体提取助手，你的任务是用户提供的原始文本中提取出以下类型的实体，类型包括\n[\"address\", \"book\", \"company\", \"game\", \"government\",\"movie\", \"name\", \"organization\", \"position\", \"scene\"]\n在识别到实体后，返回json字符串，格式为{\"type\":type,\"text\":text,\"start\":实体开始出现的下标(0base),\"end\":实体结束的下标（左闭右开区间）} ，下标均按原文字符计数，所有实体在一个数组中。\ntype 和 text 必须是字符串，start 和 end 必须是整数。\n需要满足sentence[start:end]==text，同名实体出现在不同位置时分别保留，没有实体时输出[]。只输出json，不添加解释或代码围栏。\n",
+  "generation": {
+    "do_sample": false,
+    "max_new_tokens": 256,
+    "repetition_penalty": 1.0
+  }
+}

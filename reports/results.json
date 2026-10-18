@@ -1,0 +1,83 @@
+{
+  "default_release_checkpoint": "epoch3",
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "generation": {
+    "do_sample": false,
+    "max_new_tokens": 256,
+    "repetition_penalty": 1.0
+  },
+  "holdout_1343": {
+    "base": {
+      "sample_counts": 1343,
+      "tp": 10,
+      "fp": 7,
+      "fn": 3062,
+      "invalid_counts": 278,
+      "json_parse_count": 1341,
+      "valid_response_count": 1065,
+      "valid_empty_response_count": 1049,
+      "suspected_truncation_count": 0,
+      "precision": 0.5882352941176471,
+      "recall": 0.0032552083333333335,
+      "f1": 0.006474587245063127,
+      "json_parse_rate": 0.9985107967237528,
+      "valid_response_rate": 0.7930007446016382,
+      "invalid_response_rate": 0.20699925539836186,
+      "valid_empty_response_rate": 0.7810871183916605,
+      "rate_denominator_note": "以上比例的分母均为全部评估样本数，包括有效空回答比例。"
+    },
+    "epoch3_lora": {
+      "sample_counts": 1343,
+      "tp": 775,
+      "fp": 183,
+      "fn": 2297,
+      "invalid_counts": 754,
+      "json_parse_count": 1343,
+      "valid_response_count": 589,
+      "valid_empty_response_count": 0,
+      "suspected_truncation_count": 0,
+      "precision": 0.8089770354906054,
+      "recall": 0.2522786458333333,
+      "f1": 0.3846153846153846,
+      "json_parse_rate": 1.0,
+      "valid_response_rate": 0.43857036485480266,
+      "invalid_response_rate": 0.5614296351451973,
+      "valid_empty_response_rate": 0.0,
+      "rate_denominator_note": "以上比例的分母均为全部评估样本数，包括有效空回答比例。"
+    }
+  },
+  "project_validation_1075": {
+    "epoch3": {
+      "sample_counts": 1075,
+      "tp": 607,
+      "fp": 170,
+      "fn": 1804,
+      "invalid_counts": 582,
+      "precision": 0.7812097812097812,
+      "recall": 0.25176275404396514,
+      "f1": 0.3808030112923463,
+      "suspected_truncation_count": 2
+    },
+    "epoch6": {
+      "epoch": 6,
+      "counts": [
+        807,
+        238,
+        1604,
+        471
+      ],
+      "matrics": [
+        0.7722488038277512,
+        0.33471588552467857,
+        0.46701388888888884
+      ]
+    }
+  },
+  "notes": [
+    "Holdout and project-validation results use different datasets and must not be compared as if they were the same evaluation.",
+    "Historical epoch3 weights include an optimizer and data-order reset before epoch2; the simplified training entry runs continuously.",
+    "The refactored training entry has not undergone an end-to-end training check.",
+    "Holdout inference ran on all 1343 samples; this is the public CLUENER dev split used as the project holdout, not an official hidden-test result."
+  ]
+}

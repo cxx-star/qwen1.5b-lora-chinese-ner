@@ -1,0 +1,19 @@
+{
+  "model_config": "configs/inference.json",
+  "seed": 42,
+  "epochs": 3,
+  "batch_size": 2,
+  "lr": 0.0001,
+  "weight_decay": 0.0,
+  "lora": {
+    "r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.0,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ],
+    "bias": "none",
+    "task_type": "CAUSAL_LM"
+  }
+}
