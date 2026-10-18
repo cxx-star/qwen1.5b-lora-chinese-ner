@@ -19,7 +19,7 @@ python -m pip install -r requirements.txt
 
 ## 使用第三轮 adapter
 
-在本仓库 [Release 页面](https://github.com/cxx-star/qwen1.5b-lora-chinese-ner/releases/tag/v0.1.0) 下载 `epoch3-adapter.zip`，解压到 `artifacts/epoch3/`，使权重文件位于 `artifacts/epoch3/adapter/adapter_model.safetensors`。附件说明见 [模型卡](MODEL_CARD.md)。
+在本仓库 [Release 页面](https://github.com/cxx-star/qwen1.5b-lora-chinese-ner/releases/tag/v0.1.1) 下载 `epoch3-adapter.zip`，解压到 `artifacts/epoch3/`，使权重文件位于 `artifacts/epoch3/adapter/adapter_model.safetensors`。附件说明见 [模型卡](MODEL_CARD.md)。
 
 ```powershell
 python predict.py --adapter_path artifacts/epoch3/adapter --sentence "李华在北京工作"
@@ -106,4 +106,4 @@ LoRA 改善了抽取效果，但字符位置错误仍造成大量整条回答失
 
 - 基座及其许可：[Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)、[固定版本 Apache-2.0 许可](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/blob/989aa7980e4cf806f80c7fef2b1adb7bc71aa306/LICENSE)。
 - 数据与标注规则：[CLUENER2020](https://github.com/CLUEbenchmark/CLUENER2020)，论文 [Xu et al., 2020](https://arxiv.org/abs/2001.04351)。数据请从来源获取，并遵循其使用条件。
-- 项目自身代码及新增 adapter 的发布许可尚待作者确定；不能把基座许可自动视为本仓库全部内容的许可。
+- 本项目源码及新增 LoRA adapter 采用 [Apache-2.0](LICENSE)，Copyright 2026 cxx-star。允许商用、修改和再分发，须遵守许可证中的声明保留等条件；详见 [NOTICE](NOTICE)。此授权不替代基座和数据集自身的许可。

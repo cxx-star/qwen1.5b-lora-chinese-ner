@@ -30,4 +30,4 @@
 
 ## 来源与许可
 
-基座采用 Apache-2.0，原许可随 adapter 附件保存在 `LICENSE.base-model`。本项目代码和新增 adapter 的许可见仓库发布说明。数据来自 [CLUENER2020](https://github.com/CLUEbenchmark/CLUENER2020)，请参照数据提供方的说明获取和使用。
+本项目源码及新增 LoRA adapter 采用 Apache-2.0，Copyright 2026 cxx-star；许可证与声明见附件或仓库中的 `LICENSE` 和 `NOTICE`。基座采用 Apache-2.0，原许可随 adapter 附件保存在 `LICENSE.base-model`。本 adapter 是在该基座上训练得到的增量参数，不包含基座权重。数据来自 [CLUENER2020](https://github.com/CLUEbenchmark/CLUENER2020)，其使用条件不因本项目授权而改变，请参照数据提供方的说明获取和使用。

@@ -1,0 +1,15 @@
+Qwen1.5B LoRA Chinese NER
+Copyright 2026 cxx-star
+
+The project source code and newly trained LoRA adapter are licensed under
+the Apache License, Version 2.0. See LICENSE.
+
+The adapter contains fine-tuned delta parameters for
+Qwen/Qwen2.5-1.5B-Instruct, revision
+989aa7980e4cf806f80c7fef2b1adb7bc71aa306.
+Base model: Copyright 2024 Alibaba Cloud, licensed under Apache-2.0.
+The original base-model license is included in the adapter archive as
+LICENSE.base-model. Base-model weights are not included.
+
+Training data: CLUENER2020 (https://github.com/CLUEbenchmark/CLUENER2020).
+The dataset is not included; its usage conditions remain separate.
